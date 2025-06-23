@@ -26,7 +26,7 @@ if(geminiai_key == None):
   geminiai_key = getpass('Provide your GeminiAI API key: ')
 if(not geminiai_key):
   raise ValueError("GeminiAI API key not provided")
-print('GemininAI API key set')
+print('GemininAI API key is set')
 
 import google.generativeai as GenAI
 GenAI.configure(api_key=geminiai_key)
